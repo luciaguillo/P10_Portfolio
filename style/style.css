@@ -1,0 +1,782 @@
+
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{font-size: 32;}
+
+:root{
+    --morado:#B8B8FF;
+    --moscuro:#9381FF;
+    --mclaro:#F8F7FF;
+    --naranja:#FFEEDD;
+    --blanco:#FFFFFF;
+    --poppins:'Poppins', sans-serif;
+    --indie:'Indie Flower', cursive;
+}
+
+/*TEXTOS*/
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 180px;
+}
+
+h2{
+    font-family: var(--poppins);
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+h3{
+    font-family: var(--poppins);
+    font-size: 15px;
+    font-weight: 200;
+   
+}
+
+h4{
+    font-family: var(--poppins);
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    
+}
+
+h5{
+    font-family: var(--poppins);
+    font-size: 15px;
+    font-weight: 200;
+    width: 300px;
+    
+}
+
+h6{
+    font-family: var(--poppins);
+    font-size: 60px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+nav a{
+  
+    font-family: var(--poppins);
+    font-size: 20px;
+    margin:20px;
+}
+a:visited {
+    text-decoration: none;
+}
+
+ nav a:hover {
+    color: var(--moscuro)
+}
+
+/*HEADER*/
+
+
+#portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-grow: 1;
+    
+
+}
+
+#cabecera{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    background-image: url(../img/gifs/puntos.gif);
+    background-color: #F8F7FF;
+}
+
+#portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 50px;
+}
+
+#nombre{
+    margin-bottom: 50px;
+    
+}
+
+#bienvenida{
+ margin: 20px;
+ 
+}
+
+#intro{
+    width: 70%;
+    text-align: center;
+}
+
+#atajos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+nav{
+    width: 100%;
+    margin: 30px;
+    
+}
+
+
+/*MAIN*/
+/*ABOUTME*/
+#aboutme{
+    height: 100vh;
+    background-color: #B8B8FF;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  
+}
+#aboutme_titulo{
+    color: #F8F7FF;
+    margin: 30px;
+    width: 800px;
+    height: auto;
+   
+}
+
+#aboutme_texto{
+    width: 500px;
+    height: auto;
+   
+}
+
+#caracol{
+
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#caracol img{
+    height: 200px;
+    width: 200px;
+}
+
+ #caracol img{
+            position: absolute;
+            animation-name: caracol;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+           animation-direction:normal;
+        }
+
+        @keyframes caracol {
+            0% {
+                right:0;
+                left: 85%;
+            }
+
+           
+            100%{
+                right:100%;
+                left:0;
+
+            }
+        }
+    
+
+
+/*TRABAJOS*/
+#practicas{
+    margin: 100px;
+}
+#trabajos{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+}
+
+/*CAJAS */
+
+.caja{
+    
+    height: 500px;
+    width: 50%;
+    border: 10px;
+    padding: 10px;
+     
+}
+
+.caja >header{
+    height: auto;
+    width: 400px;
+    z-index: 2;
+    padding: 10px;
+}
+
+.solid_m{
+    background-color: #B8B8FF;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 1s;  
+    
+}
+
+.solid_m:hover{
+    opacity: 0;
+}
+
+.solid_m header{
+margin: 20px;
+padding: 20px;
+width: 600px;
+height: auto;
+
+}
+
+.solid_n{
+    background-color: #FFEEDD;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 1s;  
+   
+}
+
+.solid_n:hover{
+    opacity: 0;
+}
+
+.solid_n header{
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    
+    }
+
+.solid_c{
+    background-color: #F8F7FF;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 1s;  
+}
+
+.solid_c:hover{
+    opacity: 0;
+}
+
+.solid_c header{
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    
+    }
+
+
+
+#p1{
+    background-image: url(../img/prácticas/p1.jpg);
+    background-position: center;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p2{
+    background-image: url(../img/prácticas/p2.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p3{
+    background-image: url(../img/prácticas/p3.jpg);
+   background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p4{
+    background-image: url(../img/prácticas/p4.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p5{
+    background-image: url(../img/prácticas/P5.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p6{
+    background-image: url(../img/prácticas/p6.png);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p7{
+    background-image: url(../img/prácticas/p7.png);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p8{
+    background-image: url(../img/prácticas/p8.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p9{
+    background-image: url(../img/prácticas/p9.gif);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p10{
+    background-image: url(../img/prácticas/p10.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p11{
+    background-image: url(../img/prácticas/p11.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p12{
+    background-image: url(../img/prácticas/p12.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p13{
+    background-image: url(../img/prácticas/p13.png);
+    
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p14{
+    background-image: url(../img/prácticas/p14.png);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p15{
+    background-image: url(../img/prácticas/p15.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+#p16{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    background-image: url(../img/prácticas/github2.png);
+
+    
+}
+
+#solid16{
+    background-color: #B8B8FF;
+    height: 100%;
+    width: 100%;
+    
+   
+}
+
+
+
+
+#solid16 header{
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    
+    }
+
+    #github > img{
+        z-index: -1;
+    }
+/*BOTONES*/
+
+button{
+    text-decoration: none;
+    background-color: var(--naranja);
+    border: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px;
+    height: 80px;
+    width: 90%;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    
+}
+
+button:hover{
+    box-shadow: 3px 3px grey;
+
+}
+#up{
+    z-index: 2;
+}
+#down{
+    z-index: 1;
+    width: 40%;
+    left: 5%;
+    
+}
+
+#ir{
+    z-index: 1;
+    width: 40%;
+    right: 5%;
+    background-color: #B8B8FF;
+    
+
+
+}
+
+
+
+
+
+/*FOOTER*/
+#redes{
+    height: 150px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+
+
+#enlaces{
+margin: 20px;
+}
+
+
+
+
+
+
+/*TABLET*/
+
+@media (max-width: 1024px){
+
+    /*HEADER*/
+    #nombre{
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+
+    /*MAIN*/
+    /*ABOUTME*/
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        
+    }
+    #aboutme_titulo h1{
+        font-size: 120px;
+        margin-left: 50px;
+    }
+
+    /*TRABAJOS*/
+
+
+#practicas h1{
+    margin: 100px;
+    font-size: 120px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.caja{
+    
+    height: 500px;
+    width: 80%;
+    border: 10px;
+    padding: 10px;
+
+     
+}
+
+
+    
+}
+
+/*TABLET*/
+@media(max-width:1024px){
+
+#caracol img{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+}
+
+
+
+/*MOVIL*/
+
+@media (max-width: 600px){
+   
+    /*TIPOGRAFIAS*/
+    nav a{
+  
+        font-size: 15px;
+        margin:10px;
+    }
+
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 150px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 11px;
+    }
+
+    h6{
+        font-size: 30px;
+    }
+
+    /*ABOUTME*/
+    #aboutme{
+        width: auto;
+        height: 400px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    
+    }
+    #aboutme_titulo{
+        color: #F8F7FF;
+        height: auto;
+        width: auto;
+        margin: 20px;
+        
+    
+    }
+    #aboutme_titulo >h1{
+        font-size: 60px;
+        margin: 0;
+        
+    }
+
+    #aboutme_texto{
+        width: 300px;
+        display: flex;
+        
+    }
+
+    /*CARACOL*/
+    
+
+    #caracol img{
+        height: 150px;
+        width: 150px;
+    }
+    
+     #caracol img{
+                animation-name: caracol;
+                animation-duration: 40s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+               animation-direction:normal;
+            }
+    
+            @keyframes caracol {
+                0% {
+                    right:0;
+                    left: 80%;
+                }
+    
+               
+                100%{
+                    right:80%;
+                    left:0;
+    
+                }
+            }
+
+        #practicas > h1{
+            font-size: 60px;
+            margin: 0;
+        }
+
+        /*CAJAS*/
+
+        .caja{
+    
+            height: 400px;
+            width: 450px;
+            border: 10px;
+            padding: 10px;
+             
+        }
+
+        /*img*/
+        #p1{
+            background-position: center;
+        }
+        
+        #p2{
+            background-position: center;
+            background-size: cover;
+        }
+        
+        #p3{
+           background-size: cover;
+           background-position: center;
+        }
+        
+        #p4{
+            background-size: cover;
+           background-position: center;
+        }
+        
+        #p5{
+            background-size: cover;
+            background-position: center;
+        }
+        
+        
+        
+        #p7{
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #p8{
+            background-size: cover;
+           background-position: center;
+        }
+        
+        #p9{
+            background-size: cover;
+           background-position: center;
+        }
+        
+        #p10{
+            background-size: cover;
+           background-position: center;
+        }
+        
+        #p11{
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #p12{
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #p13{
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #p14{
+            background-size: cover;
+           background-position: center;
+        }
+        
+        #p15{
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        
+
+
+
+    
+    
+}
